@@ -1,0 +1,41 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Rammetto+One&family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rowdies", sans-serif;
+}
+
+#location {
+    font-family: "Rammetto One", sans-serif;
+}
+
+.info {
+    font-family: "Happy Monkey", system-ui;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #FF9B17;
+    background: radial-gradient(circle,
+            rgba(255, 240, 100, 0.712) 0%,
+            rgba(250, 197, 128, 0.841) 35%,
+            rgb(255, 132, 31) 100%);
+}
+
+.weather{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
