@@ -13,6 +13,8 @@ body {
 
 #location {
     font-family: "Rammetto One", sans-serif;
+    font-size: 3rem;
+    font-style: italic;
 }
 
 .info {
@@ -33,9 +35,22 @@ body {
             rgb(255, 132, 31) 100%);
 }
 
-.weather{
+.weather {
     display: flex;
     align-items: center;
     margin: 15px 0;
     font-size: 1.5rem;
+}
+
+.desc {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+.circle {
+    background-color: black;
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+    margin: 0 15px;
 }
