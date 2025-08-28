@@ -9,15 +9,20 @@ const sunriseDOM = document.querySelector('.sunrise');
 const sunsetDOM = document.querySelector('.sunset');
 
 window.addEventListener('load', () => {
+    let long;
+    let lat;
+
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((position) => {
             const long = position.coords.longitude;
             const lat = position.coords.latitude;
 
-            const base = `http://localhost:3000/weather?lat=${lat}&lon=${long}`;
+            const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${apiKey}`;
 
             fetch(base)
-                .then(response => response.json())
+                .then((response) => {
+                    return response.json();
+                })
                 .then(data => {
                     const { temp } = data.main;
                     const place = data.name;
